@@ -81,7 +81,9 @@ function setup() {
 
   background(255,251,232)
 
-  text('Inspired by Wall Drawing 38',windowWidth, windowHeight )
+  //    Link to Wall Drawing 38 for inspiration     //
+
+  //    https://massmoca.org/event/walldrawing38/   //
 
 }
 
