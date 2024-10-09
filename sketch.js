@@ -73,7 +73,7 @@ function draw() {
         }
     } */
 
-let d = 35;
+let d = 45;
 let i, j, n;
 
 function setup() {
@@ -81,17 +81,19 @@ function setup() {
 
   background(255,251,232)
 
+  text('Inspired by Wall Drawing 38',windowWidth, windowHeight )
+
 }
 
 function draw() {
-    background(255,251,232)
+    background(200)
   for (i = -d * 35; i < d * 35; i += d) {
     for (j = -d * 25; j < d * 25; j += d) {
       for (n = 0; n < Math.ceil(random(1)); n++) {
         push();
         translate(i, j, n * d);
         rotate(QUARTER_PI)
-        fill(255)
+        fill(random(255), random(255), random(255), 20)
         box(15,15,300);
         pop();
       }
@@ -101,7 +103,5 @@ function draw() {
   let x = frameCount * 1;
 
   camera(0,0, x);
-
-
 
 }
